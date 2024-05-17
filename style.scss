@@ -1,19 +1,19 @@
 // Media Queries
-$mq-620-down: 'only screen and (max-width: 620px)';
-$mq-620-up: 'only screen and (min-width: 620px)';
+$mq-620-down: "only screen and (max-width: 620px)";
+$mq-620-up: "only screen and (min-width: 620px)";
 
-$mq-760-down: 'only screen and (max-width: 759px)';
-$mq-760-up: 'only screen and (min-width: 760px)';
+$mq-760-down: "only screen and (max-width: 759px)";
+$mq-760-up: "only screen and (min-width: 760px)";
 
-$mq-900-down: 'only screen and (max-width: 899px)';
-$mq-900-up: 'only screen and (min-width: 900px)';
+$mq-900-down: "only screen and (max-width: 899px)";
+$mq-900-up: "only screen and (min-width: 900px)";
 
-$mq-1000-down: 'only screen and (max-width: 999px)';
-$mq-1000-up: 'only screen and (min-width: 1000px)';
+$mq-1000-down: "only screen and (max-width: 999px)";
+$mq-1000-up: "only screen and (min-width: 1000px)";
 
-$mq-1180-up: 'only screen and (min-width: 1180px)';
+$mq-1180-up: "only screen and (min-width: 1180px)";
 
-$mq-1400-up: 'only screen and (min-width: 1400px)';
+$mq-1400-up: "only screen and (min-width: 1400px)";
 
 * {
   box-sizing: border-box;
@@ -24,8 +24,6 @@ $mq-1400-up: 'only screen and (min-width: 1400px)';
   display: none;
 }
 
-
-
 .open {
   transform: translateX(0) !important;
 }
@@ -34,7 +32,7 @@ body {
   background-color: #fffbf3;
   margin: 0;
   padding: 0;
-  font-family: 'Inter';
+  font-family: "Inter";
 
   .container {
     margin: 2em;
@@ -169,7 +167,7 @@ body {
         font-size: 24px;
       }
       .img-container {
-        background-image: url('./paw.svg');
+        background-image: url("./paw.svg");
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
@@ -211,7 +209,7 @@ body {
       display: flex;
       flex-wrap: wrap;
       // flex-grow: 1;
-      //  flex-direction: column; 
+      //  flex-direction: column;
       justify-content: center;
       align-items: center;
       padding-bottom: 1rem;
@@ -222,7 +220,7 @@ body {
         // margin: 1rem;
         border-radius: 0.5em;
         padding: 2rem;
-        background-color: #E89058;
+        background-color: #e89058;
         .card-header {
           display: flex;
           gap: 1.5rem;
@@ -317,14 +315,13 @@ body {
           flex-wrap: wrap;
           margin: 2rem 0;
           gap: 1rem;
-          
-          .blog-item{
-            max-width:300px ;
-            .blog-img{
+
+          .blog-item {
+            max-width: 300px;
+            .blog-img {
               position: relative;
             }
-            .blog-text{
-
+            .blog-text {
             }
           }
         }
@@ -353,46 +350,73 @@ body {
         a {
           font-size: 1.1rem;
           text-decoration: none;
-          border-radius: .3rem;
+          border-radius: 0.3rem;
           display: inline-block;
           background: #ffa800;
           color: #fff;
           padding: 0.55rem 1.2rem;
           transition: all 0.5s ease;
-          
-        
         }
       }
     }
 
-    .products{
+    .products {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      margin: 1em auto;
       
+      gap: 1rem;
 
-      .products-card{
-
-        .products-card-img{
-
+      .products-card {
+      background-color: #feecca;
+      border-radius: 0.5em;
+        padding: 1rem;
+        .products-card-img {
+          margin-bottom: 2rem;
+          a {
+            img {
+              width: 300px;
+              height: 300px;
+            }
+          }
         }
 
-        .products-card-text{
-
-          .products-card-title{
-
+        .products-card-text {
+          .products-card-title {
+            font-size: 1.5rem;
+            font-weight: bold !important;
+            margin-bottom: .8rem;
           }
-          .product-card--description{
+          .products-card--description {
 
           }
         }
-        .btn-container{
-          .btn{
-
+        .btn-container {
+          display: flex;
+          gap: 1rem;
+          justify-content: center;
+          align-items: center;
+          .btn {
+            background-color: #ffa800;
+            text-decoration: none;
+            padding: 1em;
+            width: 80%;
+            display: block;
+            text-align: center;
+            font-weight: bold;
+            font-size: 1rem;
+            color: black;
+            border-radius: 0.3rem;
+            margin-top: 3em;
+            border-width: 0;
           }
         }
       }
     }
-
   }
-  
+
   footer {
     text-align: center;
     margin-top: 2rem;
@@ -429,10 +453,10 @@ body {
     h2 {
       margin-top: 0;
     }
-    input[type='text'],
-    input[type='email'],
-    input[type='tel'],
-    input[type='number'],
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="number"],
     textarea {
       width: 100%;
       padding: 10px;
