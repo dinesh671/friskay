@@ -24,7 +24,11 @@ document.querySelector('form').addEventListener('submit', function(event) {
   };
 
   // Logging form data to the console
-  console.log(formData);
+  
+  localStorage.setItem('contactForm', JSON.stringify(formData))
+  console.log(localStorage.getItem("contactForm"));
+  console.log(JSON.parse(localStorage.getItem("contactForm")));
+  
 });
 
    
